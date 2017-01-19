@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Email Address</ion-label>
+        <ion-input type="email" placeholder="Email" name="email" [(ngModel)]="emailAddress" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button class="submit-btn" full [disabled]="!loginForm.form.valid">Login</button>
+      </ion-item>
+
+    </ion-list>
+  </form>
+
+</ion-content>

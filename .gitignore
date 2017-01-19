@@ -1,0 +1,24 @@
+# Node Files #
+node_modules/
+npm-debug.log*
+
+# Logs
+logs
+*.log
+
+#IDE
+.idea/
+
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release

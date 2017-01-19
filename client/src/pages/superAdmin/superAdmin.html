@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item ion-item *ngFor="let community of communities">
+      {{ community.name }}
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="newName"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="createCommunity()">Create</button>
+
+</ion-content>

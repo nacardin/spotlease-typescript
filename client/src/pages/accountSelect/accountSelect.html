@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Accounts</ion-title>
+    <button ion-button menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item (click)="openNavDetailsPage('superAdmin')" icon-left>Super Admin</button>
+    <button ion-item (click)="openNavDetailsPage('communityAdmin')" icon-left>Community Admin: Grand</button>
+    <button ion-item (click)="openNavDetailsPage('unit')" icon-left>Grand - Unit 1007</button>
+  </ion-list>
+
+</ion-content>

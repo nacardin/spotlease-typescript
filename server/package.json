@@ -2,10 +2,6 @@
   "name": "spotlease-server",
   "version": "1.0.0",
   "description": "spotlease-server",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/nacardin/spotlease.git"
@@ -15,5 +11,31 @@
   ],
   "author": "Nick Cardin <nick@cardin.email>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/nacardin/spotlease#readme"
+  "homepage": "https://bitbucket.org/nacardin/spotlease#readme",
+  "main": "build/index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "watch": "concurrently \"tsc -w\" \"nodemon -C -d 1 -w build/ build/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^7.0.5",
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
+    "elliptic": "^6.4.0",
+    "express": "^4.14.0",
+    "mailcomposer": "^4.0.1",
+    "mailgun-js": "^0.8.1",
+    "pg": "^6.1.2",
+    "reflect-metadata": "^0.1.9",
+    "typeorm": "^0.0.8",
+    "typescript": "^2.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
 }
