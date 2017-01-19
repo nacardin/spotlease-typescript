@@ -1,0 +1,19 @@
+{
+  "name": "spotlease-server",
+  "version": "1.0.0",
+  "description": "spotlease-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/nacardin/spotlease.git"
+  },
+  "keywords": [
+    "parking"
+  ],
+  "author": "Nick Cardin <nick@cardin.email>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nacardin/spotlease#readme"
+}
